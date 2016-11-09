@@ -39,6 +39,13 @@ class TweetsController < ApplicationController
     end
   end
 
+  def destroy
+    @tweet = Tweet.destroy(tweet_params)
+    @tweet.destroy
+
+  end
+
+
  private
 
  def set_tweet
