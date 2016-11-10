@@ -38,11 +38,11 @@ class TweetsController < ApplicationController
       end
     end
   end
-  
+
   def destroy
       @tweet.destroy
 
-<<<<<<< HEAD
+
   def destroy
     @tweet = Tweet.destroy(tweet_params)
     @tweet.destroy
@@ -50,12 +50,12 @@ class TweetsController < ApplicationController
   end
 
 
-=======
+
       respond_to do |format|
         format.html { redirect_to root_path, notice: 'Tweet was deleted'}
       end
     end
->>>>>>> 461d31728e8f1c6c12a2ccb3bdf90686fbf11d53
+
  private
 
  def set_tweet
